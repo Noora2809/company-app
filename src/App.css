@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+
+.row_head{
+  width: 100%;
+  height: 70px;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_head{
+  margin-left: -200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left_col{
+  height: 600px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.member_img img{
+  height: 350px;
+  width: 80%;
+}
+
+.join button {
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid rgb(180, 175, 175);
+  background-color: rgba(249, 240, 240, 0.9); 
+  margin-top: -20px;
+}
+
+.unlock{
+  margin-top: 40px;
+  height: 30px;
+  width: 200px;
   color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid rgb(180, 175, 175);
+  background-color: rgba(62, 199, 121, 0.701);
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.reset{
+  height: 30px;
+  margin-top: 10px;
+  color: white;
+  width: 150px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid rgb(180, 175, 175);
+  background-color: rgba(62, 199, 121, 0.701); 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
