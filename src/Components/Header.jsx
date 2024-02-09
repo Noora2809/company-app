@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import headerImg from "../Assets/real-estate-house.png";
-import { Navbar } from "react-bootstrap";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+    
   return (
     <div>
       <div className="container-fluid">
@@ -21,9 +26,11 @@ const Header = () => {
       </div>
     </div>
 
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="nav_links justify-content-center text-center">
+    <div className="container-fluid">
+      <div className="row align-items-center">
+        <div className="nav_links justify-content-center text-center">
+          <i className="fa-solid fa-bars d-md-none" onClick={toggleMenu}></i>
+          <div className={`menu-links ${isOpen ? 'show' : 'hide'}`}>
             <a href="" className="mx-3 text-dark">
               Home
             </a>
@@ -42,6 +49,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
