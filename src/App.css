@@ -200,7 +200,7 @@
   }
 
   .pro_icon {
-    display: none; /* Hide profile icon on smaller screens */
+    display: none; 
   }
 
   .left_col {
@@ -211,11 +211,11 @@
   }
 
   .home_head {
-    margin-left: 0; /* Reset margin for smaller screens */
+    margin-left: 0;
   }
 
   .ms-md-5 {
-    margin-left: 0 !important; /* Reset margin for medium and larger screens */
+    margin-left: 0 !important; 
   }
 
   .carousel-item{
@@ -232,8 +232,8 @@
   } 
   .d-flex.justify-content-around {
     width: 100px;
-    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
-    flex-direction: column; /* Center flex items horizontally */
+    flex-wrap: wrap; 
+    flex-direction: column; 
   }
   .card {
     display: flex;
@@ -263,6 +263,11 @@
     margin-left: 40px;
   }
   
+  .row_head {
+    width: 400px;
+    height: 70px;
+  }  
+
   .phone{
     width: 20px;
   }
@@ -289,9 +294,10 @@
   }
   
   .celeb-img img {
-    margin-top: 430px;
-    margin-left: -270px;
-    width: 500px;
+    margin-top: 390px;
+    margin-left: -200px;
+    width: 350px;
+    height: 400px;
     
   }
   
