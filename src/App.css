@@ -1,19 +1,36 @@
-
-.row_head{
+.row_head {
   width: 100%;
   height: 70px;
   padding: 5px;
 }
-
 .header_head{
   margin-left: -200px;
 }
+.Home_sub_head{
+  max-width: 40px;
+  color: black;
+  border-color: black;
+}
 
-.left_col{
+.left_col {
   height: 600px;
 }
 
-.member_img img{
+
+.card {
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+
+.card {
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.member_img img {
   height: 350px;
   width: 60%;
 }
@@ -24,11 +41,11 @@
   border-radius: 15px;
   font-weight: 600;
   border: 1px solid rgb(180, 175, 175);
-  background-color: rgba(249, 240, 240, 0.9); 
+  background-color: rgba(249, 240, 240, 0.9);
   margin-top: -20px;
 }
 
-.unlock{
+.unlock {
   margin-top: 40px;
   height: 30px;
   width: 200px;
@@ -37,10 +54,9 @@
   font-weight: 600;
   border: 1px solid rgb(180, 175, 175);
   background-color: rgba(62, 199, 121, 0.701);
-
 }
 
-.reset{
+.reset {
   height: 30px;
   margin-top: 10px;
   color: white;
@@ -48,11 +64,16 @@
   border-radius: 15px;
   font-weight: 600;
   border: 1px solid rgb(180, 175, 175);
-  background-color: rgba(62, 199, 121, 0.701); 
-
+  background-color: rgba(62, 199, 121, 0.701);
 }
 
-
+.Home_sub_head {
+  width: "25px";
+  height: "2px";
+  border: "none";
+  background-color: "black";
+  margin-top: "-15px";
+}
 
 .container {
   max-width: 1100px;
@@ -69,18 +90,10 @@
   position: relative;
 }
 
-
-
-
-
-
-
-.phone-input input{
-  height: 25px; 
-  width: 200px; 
+.phone-input input {
+  height: 25px;
+  width: 200px;
 }
-
-
 
 .continue {
   margin-top: 40px;
@@ -99,11 +112,10 @@
 
 .phone-input input {
   flex: 1;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
-
-.phone{
+.phone {
   color: white;
   border-radius: 15px;
   font-weight: 600;
@@ -120,8 +132,21 @@
   width: 410px;
 }
 
-.name, .email {
-  margin-bottom: 10px; 
+.name,
+.email {
+  margin-bottom: 10px;
+}
+
+.celeb-img img {
+  margin-left: -150px;
+  margin-top: -50px;
+  width: 800px;
+  height: 500px;
+}
+
+.celeb-img img {
+  margin-left: -150px;
+  margin-top: -50px
 }
 
 .celeb-img img{
@@ -132,19 +157,20 @@
 
 }
 
-
-
 @media (max-width: 400px) {
-  body{
+  body {
     width: 100%;
   }
-
+  .col-8 {
+    margin-top: 100px;
+  }
   .img_header{
+    width: 200px;
     margin-left: -200px;
     margin-right: 10px;
     margin-top: -10px;
   }
-  .header_head h4{
+  .header_head h4 {
     margin-left: 30px;
   }
 
@@ -154,15 +180,21 @@
     justify-content: center;
     text-align: center;
   }
-  
+  .member_img {
+    width: 360px;
+  }
+  .join {
+    margin-left: 80px;
+  }
+
   .menu-links a {
     margin: 0 15px;
   }
-  
+
   .menu-links.hide {
     display: none;
   }
-  
+
   .fa-bars {
     cursor: pointer;
   }
@@ -173,7 +205,7 @@
 
   .left_col {
     width: 100%;
-    text-align: center; 
+    text-align: center;
     margin-left: 100px;
     margin-top: 30px;
   }
@@ -186,74 +218,93 @@
     margin-left: 0 !important; /* Reset margin for medium and larger screens */
   }
 
+  .carousel-item{
+    margin-left: 50px;
+  }
   .carousel {
-    margin-top: 15rem;
-    margin-left: -5rem;
+    margin-top: 1rem;
+    margin-left: 80px;
+  }
+   .carousel-inner {
+    
+    margin-top: -1rem;
+    margin-left: -45px;
+  } 
+  .d-flex.justify-content-around {
+    width: 100px;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    flex-direction: column; /* Center flex items horizontally */
+  }
+  .card {
     display: flex;
-    flex-direction: column;
+    width: 150px;
+    margin-top: 0rem;
+    margin-left: 0rem;
   }
 
   .unlock-para{
-    margin-top: 260px;
-    margin-left: -850px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -60px;
   }
-  
+
   .button1,
   .button2 {
     text-align: center;
-    margin-left: -850px;
+    margin-left: -40px;
   }
+ 
 
 
 
-/* exclusive */
 
-.text-info{
-  width: 311px;
-  margin-left: 40px;
-}
-
-.phone{
-  width: 20px;
-}
-.form label{
-text-align: center;
-}
-
-.phone-input input{
-  height: 25px; 
-  width: 150px; 
-}
-.name input{
-  height: 25px; 
-  width: 311px; 
-}
-.email input{
-  height: 25px; 
-  width: 311px; 
-}
-
-.container .row .col-6{
-  display: flex;
-  flex-direction: column;
-}
-
-.celeb-img img {
-  margin-top: 430px;
-  margin-left: -270px;
-  width: 500px;
+  .text-info{
+    width: 311px;
+    margin-left: 40px;
+  }
   
-}
-
-.continue {
-  height: 30px;
-  width: 150px;
-  margin-left: 100px;
-
-}
-
-.end-para{
-  width: 311px;
-} 
+  .phone{
+    width: 20px;
+  }
+  .form label{
+  text-align: center;
+  }
+  
+  .phone-input input{
+    height: 25px; 
+    width: 150px; 
+  }
+  .name input{
+    height: 25px; 
+    width: 311px; 
+  }
+  .email input{
+    height: 25px; 
+    width: 311px; 
+  }
+  
+  .container .row .col-6{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .celeb-img img {
+    margin-top: 430px;
+    margin-left: -270px;
+    width: 500px;
+    
+  }
+  
+  .continue {
+    height: 30px;
+    width: 150px;
+    margin-left: 100px;
+  
+  }
+  
+  .end-para{
+    width: 311px;
+  }
+ 
   
 }
