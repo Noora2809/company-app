@@ -7,7 +7,7 @@ const Exclusive = () => {
       <div className="container">
         <div className="row mt-5">
           <div className="col-6">
-            <div className="">
+            <div className="ex-head">
             <h2 className="text-info">Unlock Exclusive Benefits</h2>
             </div>
             <div className="form">
@@ -31,10 +31,10 @@ const Exclusive = () => {
             <div className="button mb-3">
             <button className="continue">Continue</button>
           </div>
-          <p>Get ready to receive a secret code [otp] on your phone</p>
+          <p className="end-para">Get ready to receive a secret code [otp] on your phone</p>
           </div>
           <div className="col-6 celeb-img">
-            <img src={celebImg}  alt="" width={'800px'} height={'500px'} />
+            <img src={celebImg}  alt=""  />
           </div>
         </div>
       </div>
