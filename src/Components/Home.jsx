@@ -15,69 +15,64 @@ const Home = () => {
         <p>Joseph Lasar</p>
       </div>
 
-      <div style={{ display: "flex" }}>
-      <div className="left_col" style={{ width: "100%" }}>
+      <div className="row">
+      <div className="col-4">
       <h3 className="home_head ms-3 ms-md-5">New Arrival</h3>
       <p className="ms-3 ms-md-5 text-dark" style={{ fontSize: "10px" }}>
         JOIN TODAY
       </p>
       <hr
-        className="ms-3 ms-md-5"
-        style={{
-          width: "25px",
-          height: "2px",
-          border: "none",
-          backgroundColor: "black",
-          marginTop: "-15px",
-        }}
+        className="Home_sub_head ms-3 ms-md-5"
       />
       <div className="member_img text-center">
-        <img src={memberImg} alt="" style={{ width: "70%" }} />
+        <img src={memberImg} alt="" />
       </div>
       <div className="join text-center">
         <button className="btn btn-light text-info shadow">JOIN NOW</button>
       </div>
-    </div>
+      </div>
 
-        <div className="carousel text-center">
-          <h3 className="unlock-para text-success mb-3">Unlock Premium Features Now</h3>
+        <div className="col-8 carousel text-center mt">
+          <h3 className="unlock-para text-success mb">Unlock Premium Features Now</h3>
+
           <Carousel>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <div className="card text-center me-4" style={{ width: "18rem" }}>
-                  <img
-                    src={Img1}
-                    className="card-img-top"
-                    alt="Image 1"
-                  />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">Lower <br /> Interest Rates</h5>
-                  </div>
+          <Carousel.Item>
+          <div className="carousel-inner mt">
+            <div className="d-flex justify-content-around">
+              <div className="card text-center" >
+                <img
+                  src={Img1}
+                  className="card-img-top"
+                  alt="Image 1"
+                />
+                <div className="card-body text-center">
+                  <h5 className="card-title">Lower <br /> Interest Rates</h5>
                 </div>
-                <div className="card text-center me-4 " style={{ width: "18rem" }}>
-                  <img
-                    src={Img2}
-                    className="card-img-top"
-                    alt="Image 2"
-                  />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">Interest <br /> free Payments</h5>
-                  </div>
                 </div>
-                <div className="card text-center" style={{ width: "18rem" }}>
-                  <img
-                    src={Img3}
-                    className="card-img-top"
-                    alt="Image 3"
-                  />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">Discount on <br />Materials</h5>
-                  </div>
+              <div className="card text-center" >
+                <img
+                  src={Img2}
+                  className="card-img-top"
+                  alt="Image 2"
+                />
+                <div className="card-body text-center">
+                  <h5 className="card-title">Interest <br /> free Payments</h5>
                 </div>
               </div>
-            </Carousel.Item>
-          </Carousel>
-
+              <div className="card text-center" >
+                <img
+                  src={Img3}
+                  className="card-img-top"
+                  alt="Image 3"
+                />
+                <div className="card-body text-center">
+                  <h5 className="card-title">Discount on <br />Materials</h5>
+              </div>
+              </div>
+            </div>
+          </div>
+          </Carousel.Item>
+        </Carousel>
           <div className="button1">
             <Link to={`/exclusive`}>
             <button className="unlock">Unlock now</button>
@@ -92,7 +87,7 @@ const Home = () => {
 
 
       </div>
-    </div>
+     </div>
   );
 };
 
